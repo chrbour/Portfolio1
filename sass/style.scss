@@ -1,7 +1,215 @@
 @import '_variables_overrides';
-
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
-.azerty{
-    background-color: $blue-200;
+$backgroundMain: rgb(235, 229, 217);
+$presentationBackground: rgb(31, 132, 160);
+$color-white: white;
+$color-black: black;
+
+@keyframes movingShape{
+    from {
+        border-radius: 60% 40% 64% 36% / 34% 21% 79% 66%;
+    }
+    to{
+        border-radius: 45% 55% 36% 64% / 21% 45% 55% 79%;
+    }
+}
+@keyframes movingProjects{
+    from {
+        border-radius: 14% 86% 25% 18% / 42% 6% 56% 46%;
+    }
+    to{
+        border-radius: 96% 82% 18% 12% / 39% 30% 10% 46%;
+    }
+}
+@keyframes skills{
+    from{
+        transform: translateX(0px)
+    }
+    to{
+        transform: translateX(20px);
+    }
+}
+@keyframes moved{
+    from{
+        transform: translateX(1700px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes growingRectangle{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1)
+    }
+}
+@keyframes rotatingSquare{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(285deg);
+    }
+}
+
+@mixin anime-aboutMe{
+    animation: 4s ease-in-out infinite alternate movingShape;
+}
+@mixin anime-projects{
+    animation: 4s ease-in-out infinite alternate movingProjects;
+}
+
+
+.nom{
+    background-color: $cyan-700;
+}
+main{
+    background-color: $backgroundMain;
+}
+.container_presentation, .container_about, .container_mesProjets{
+    height: 100vh;
+    width: 100vw;
+}
+.presentation{
+    background-color: $presentationBackground;
+    border-radius: 50px 0;
+    height: 400px;
+    width: 100%;
+    animation: 2s ease-in-out backwards moved;
+    & h1{
+        text-shadow:  0 0 1px $color-black;
+    }
+}
+.square{
+    height: 100px;
+    width: 100px;
+    transform: rotate(45deg);
+    background: linear-gradient(150deg,$cyan-100, $cyan-800);
+    animation: rotatingSquare 8s ease-in-out infinite alternate;
+}
+.photo_shape{
+    width: 250px;
+    height: 250px;
+    @include anime-aboutMe;
+    background: linear-gradient(150deg,$cyan-100, $cyan-800);
+}
+.btn{
+    background-color: $cyan-800;
+    border-color: $color-black;
+    color: $color-white;
+    &:hover{
+        background-color: $cyan-900;
+        border-color: $light;
+    }
+}
+#about{
+    background-color: $backgroundMain;
+    padding: 50px;
+}
+.aboutMe{
+    background-color: red;
+    padding: 100px 80px;
+    width: 600px;
+    height: 500px;
+    font-size: 20px;
+    @include anime-aboutMe;
+    background: linear-gradient(150deg,$cyan-100, $cyan-800);
+    & p{
+        color: $cyan-900;
+    }
+}
+.skills p{
+    margin: 5px;
+    padding: 5px 7px;
+    border-radius: 20px;
+    color: $color-white;
+    background: $cyan-700;
+    animation: 3s 1s ease-in-out infinite alternate skills;
+}
+#mesProjets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $backgroundMain;
+    padding-top: 50px;
+    position: absolute;
+}
+
+img{
+    height:100%;
+    width: 100%;
+}
+.rectangle{
+    margin: 30px;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 2px 4px $cyan-700;
+    animation: 4s ease-in-out infinite alternate growingRectangle;
+}
+.tousMesProjets{
+    position: relative;
+}
+.projet{
+    width: 25%;
+    height: 25%;
+}
+#ohMyFood, #laPanthere, #kanap, #piiquante, #kasa{
+    visibility: hidden;
+    &:target{
+        text-align: center;
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        height: 100vh;
+        background: linear-gradient(150deg,$cyan-100, $cyan-800);
+        @include anime-projects;      
+    }
+    & img{
+        width: 35%;
+        height: 35%;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    & h1{
+        color: $color-white;
+        background: $cyan-900;
+        width:300px;
+        margin: 0 auto 10px;
+        border-radius: 20px;
+    }
+    & div a{
+        text-decoration: none;
+        color: $color-white;
+        font-size: 20px;
+    }
+}
+.close{
+    margin: 60px 90px 0;
+    height: 15px;
+    color: $color-black;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+.projectDescription{
+    color: $color-white;
+    background-color: $cyan-900;
+    width: 500px;
+    height:200px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px 40px;
+    text-align: start;
+    font-size: 18px;
 }
