@@ -25,7 +25,7 @@
                             <a class="nav-link" href="#mesProjets">Mes projets</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="#contactMe">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -36,23 +36,23 @@
         </nav>
     </header>
     <main>
-        <section >
+        <section id="presentation">
             <div class="container container_presentation d-flex align-items-center ">
                 <div class="row align-items-center presentation">
-                    <div class="col-2 d-flex justify-content-end">
+                    <div class="col-md-2 d-flex justify-content-end container_square">
                         <div class="square"></div>
                     </div>
-                    <div class="col-6 text-center text-light text-presentation"> 
+                    <div class="col-8 col-md-6 text-center text-light text-presentation"> 
                         <h1 class="fw-bold">Christophe BOURREAU</h1>
                         <h2 class="fw-light py-3">Développeur Web</h2>
                         <p class="fs-6">Passionné par la création de sites web je saurais vous écouter<br/>et vous accompagner dans la réalisation de tous vos projets</p>
                         <div class="text-center">
-                            <button onclick="window.location.href='#mesProjets';" type="button" class="btn mt-4">Mes projets</button>
+                            <button onclick="window.location.href='#mesProjets'" type="button" class="btn mt-4">Mes projets</button>
                         </div>
                     </div>
-                    <div class="col-4 my-5 d-flex justify-content-center">
+                    <div class="col-4 col-md-4 my-5 d-flex justify-content-center">
                         <div class="photo_shape overflow-hidden">
-                            <img src="./img/Christophe_Sticker.png" alt="Christophe" class="h-100 w-100">
+                            <img src="./img/Christophe_Sticker.png" alt="Christophe">
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
                 <div>
                     <h2 class="fs-sm-6">Qui suis-je ?</h2> 
                 </div>
-                <div class="row g-1">
+                <div class="row g-1 meAndSkills">
                     <div class="col-8 justify-content-center">
                         <p class="fst-normal fs-2 fs-md-6">Développement web </p>
                         <div class="aboutMe mx-auto"> 
@@ -155,7 +155,7 @@
                     <img src="img/P4/P4_Contact.png" alt="Photo Page Contact Version desktop">
                     <img src="img/P4/P4_Présentation_2.png" alt="Photo Présentation Suite version desktop">
                     <div>
-                        <p class="projectDescription">Ce projet consistait à améliorer le SEO d'un site existant.<br/>
+                        <p class="projectDescription">Ce projet consistait à améliorer le SEO d'un site existant de web design.<br/>
                         Analyse de l'état de SEO du site, optimisation de la performance et de l'accessibilité.</p>
                         <a href="https://chrbour.github.io/LaPanthere/" target="_blank">https://chrbour.github.io/LaPanthere/</a>
                     </div>
@@ -168,8 +168,8 @@
                     <img src="img/P5/P5_presentation.png" alt="Photo Présentation version Desktop">
                     <img src="img/P5/P5_Produits.png" alt="Photo de la page produits Version desktop">
                     <img src="img/P5/P5_Panier.png" alt="Photo du panier version desktop">
-                    <p class="projectDescription">Dans ce projet les parties front et back-end étaient créées.<br/>
-                    Implémentation de JavaScript pour utiliser une API et mobiliser le locaStorage afin de dynamiser le site.</p>
+                    <p class="projectDescription">Dans ce projet les parties front et back-end d'un site e-commerce étaient créées.<br/>
+                    Il fallait ajouter la partie JavaScript pour utiliser une API et mobiliser le locaStorage afin de dynamiser le site.</p>
                     <img src="img/P5/P5_Validation_Commande.png" alt="Photo validation de commande.">
                 </div>
             </section>
@@ -177,31 +177,41 @@
                 <a href="#mesProjets" class="close fs-1 text-decoration-none d-flex justify-content-end">x</a>
                 <h1>PIIQUANTE</h1>
                 <div class="images">   
-                    <img src="img/P3/P3_presentation.png" alt="Photo Présentation version Desktop">
-                    <img src="img/P3/P3_menu_desktop.png" alt="Photo Menu Version desktop">
-                    <img src="img/P3/P3_menu-tablette.png" alt="Photo Menu Version tablette">
-                    <p class="projectDescription">Le but de ce projet était de développer un site "mobile first" qui répertorie les menus de restaurants gastronomiques.<br/>
-                    Création des pages depuis une maquette Figma, et implémentation d'animations CSS.</p>
+                    <img src="img/P6/P6_presentation.png" alt="Photo Présentation version Desktop">
+                    <img src="img/P6/P6_Sauce.png" alt="Photo détail sauce version desktop">
+                    <img src="img/P6/P6_Ajout_Sauce.png" alt="Photo page Ajout d'une sauce">
+                    <p class="projectDescription">Ce projet reposait sur la création d'une API sécurisée pour une application d'avis gastronomiques.</p>
                 </div>
             </section>
             <section id="kasa">
                 <a href="#mesProjets" class="close fs-1 text-decoration-none d-flex justify-content-end">x</a>
                 <h1>KASA</h1>
                 <div class="images">   
-                    <img src="img/P3/P3_presentation.png" alt="Photo Présentation version Desktop">
-                    <img src="img/P3/P3_menu_desktop.png" alt="Photo Menu Version desktop">
-                    <img src="img/P3/P3_menu-tablette.png" alt="Photo Menu Version tablette">
-                    <p class="projectDescription">Le but de ce projet était de développer un site "mobile first" qui répertorie les menus de restaurants gastronomiques.<br/>
-                    Création des pages depuis une maquette Figma, et implémentation d'animations CSS.</p>
+                    <img src="img/P7/P7_Presentation.png" alt="Photo Présentation version Desktop">
+                    <img src="img/P7/P7_Rental.png" alt="Photo Page de location d'appartement version desktop">
+                    <img src="img/P7/P7_A_Propos.png" alt="Photo Page à propos version desktop">
+                    <p class="projectDescription">Le but de ce projet était de créer une application web de location immobilière avec React.</p>
                 </div>
             </section>
         </section>
-        <section>
-            <a href="mon lien linkedin" target="_blank">
-                <i class="bi bi-linkedin"></i>
-            </a>
+        <section id="contact" class="d-flex align-items-center flex-column">
+            <h1 id="contactMe">Contactez-moi:</h1>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/christophe-bourreau" target="blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/kikibou44/" target="blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://github.com/chrbour" target="blank">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+            <div class="d-flex align-items-center">
+                <i class="bi bi-envelope"></i>
+                <h3>christophebourreau@yahoo.fr</h3>
+            </div>
         </section>
-        <section></section>
     </main>
     <footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

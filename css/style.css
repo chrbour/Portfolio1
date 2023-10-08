@@ -1,4 +1,56 @@
 @charset "UTF-8";
+@keyframes movingShape {
+  from {
+    border-radius: 60% 40% 64% 36%/34% 21% 79% 66%;
+  }
+  to {
+    border-radius: 45% 55% 36% 64%/21% 45% 55% 79%;
+  }
+}
+@keyframes movingProjects {
+  from {
+    border-radius: 14% 86% 25% 18%/42% 6% 56% 46%;
+  }
+  to {
+    border-radius: 96% 82% 18% 12%/39% 30% 10% 46%;
+  }
+}
+@keyframes skills {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}
+@keyframes moved {
+  from {
+    transform: translateX(1700px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes growingRectangle {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+@keyframes rotatingSquare {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(285deg);
+  }
+}
+main {
+  background-color: rgb(235, 229, 217);
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -11905,60 +11957,8 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-@keyframes movingShape {
-  from {
-    border-radius: 60% 40% 64% 36%/34% 21% 79% 66%;
-  }
-  to {
-    border-radius: 45% 55% 36% 64%/21% 45% 55% 79%;
-  }
-}
-@keyframes movingProjects {
-  from {
-    border-radius: 14% 86% 25% 18%/42% 6% 56% 46%;
-  }
-  to {
-    border-radius: 96% 82% 18% 12%/39% 30% 10% 46%;
-  }
-}
-@keyframes skills {
-  from {
-    transform: translateX(0px);
-  }
-  to {
-    transform: translateX(20px);
-  }
-}
-@keyframes moved {
-  from {
-    transform: translateX(1700px);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-@keyframes growingRectangle {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.1);
-  }
-}
-@keyframes rotatingSquare {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(285deg);
-  }
-}
 .nom {
   background-color: #087990;
-}
-
-main {
-  background-color: rgb(235, 229, 217);
 }
 
 .container_presentation, .container_about, .container_mesProjets {
@@ -12003,7 +12003,6 @@ main {
 }
 
 #about {
-  background-color: rgb(235, 229, 217);
   padding: 50px;
 }
 
@@ -12033,9 +12032,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(235, 229, 217);
   padding-top: 50px;
-  position: absolute;
 }
 
 img {
@@ -12053,10 +12050,6 @@ img {
   animation: 4s ease-in-out infinite alternate growingRectangle;
 }
 
-.tousMesProjets {
-  position: relative;
-}
-
 .projet {
   width: 25%;
   height: 25%;
@@ -12064,12 +12057,12 @@ img {
 
 #ohMyFood, #laPanthere, #kanap, #piiquante, #kasa {
   visibility: hidden;
+  position: absolute;
 }
 #ohMyFood:target, #laPanthere:target, #kanap:target, #piiquante:target, #kasa:target {
   text-align: center;
   visibility: visible;
   opacity: 1;
-  position: absolute;
   justify-content: center;
   align-items: center;
   width: 80vw;
@@ -12119,6 +12112,73 @@ img {
   border-radius: 20px 40px;
   text-align: start;
   font-size: 18px;
+}
+
+#contact {
+  height: 100vh;
+  padding-top: 100px;
+}
+#contact a {
+  text-decoration: none;
+}
+
+.icons {
+  margin: 200px 0 0;
+}
+
+i {
+  font-size: 100px;
+  margin: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .container_square {
+    display: none !important;
+  }
+  .photo_shape {
+    height: 120px;
+    width: 120px;
+  }
+  .aboutMe {
+    width: 400px;
+    height: 350px;
+    padding-top: 50px;
+  }
+  .aboutMe p {
+    font-size: 14px;
+  }
+  .container_mesProjets div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projet {
+    width: 60%;
+  }
+  #contact {
+    padding: 1400px 0 300px;
+    height: 100%;
+  }
+  #contact h3, #contact .h3 {
+    font-size: 18px;
+  }
+  .icons {
+    margin-top: 20px;
+  }
+  i {
+    font-size: 60px;
+    margin: 15px;
+  }
+  #ohMyFood img, #laPanthere img, #kanap img, #piiquante img, #kasa img {
+    width: 40%;
+    height: 40%;
+    margin: 10px;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .meAndSkills {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
