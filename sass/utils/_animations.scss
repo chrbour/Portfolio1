@@ -1,0 +1,48 @@
+@keyframes movingShape{
+    from {
+        border-radius: 60% 40% 64% 36% / 34% 21% 79% 66%;
+    }
+    to{
+        border-radius: 45% 55% 36% 64% / 21% 45% 55% 79%;
+    }
+}
+@keyframes movingProjects{
+    from {
+        border-radius: 14% 86% 25% 18% / 42% 6% 56% 46%;
+    }
+    to{
+        border-radius: 96% 82% 18% 12% / 39% 30% 10% 46%;
+    }
+}
+@keyframes skills{
+    from{
+        transform: translateX(0px)
+    }
+    to{
+        transform: translateX(20px);
+    }
+}
+@keyframes moved{
+    from{
+        transform: translateX(1700px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes growingRectangle{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1)
+    }
+}
+@keyframes rotatingSquare{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(285deg);
+    }
+}

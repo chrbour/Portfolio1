@@ -1,0 +1,6 @@
+@mixin anime-aboutMe{
+    animation: 4s ease-in-out infinite alternate movingShape;
+}
+@mixin anime-projects{
+    animation: 4s ease-in-out infinite alternate movingProjects;
+}
