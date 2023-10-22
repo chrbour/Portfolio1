@@ -12042,7 +12042,6 @@ img {
 
 .rectangle {
   margin: 30px;
-  height: 210px;
   overflow: hidden;
   border-radius: 20px;
   display: flex;
