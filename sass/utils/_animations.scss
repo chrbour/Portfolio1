@@ -8,10 +8,10 @@
 }
 @keyframes movingProjects{
     from {
-        border-radius: 14% 86% 25% 18% / 42% 6% 56% 46%;
+        border-radius: 14% 86% 25% 12% / 42% 6% 56% 46%;
     }
     to{
-        border-radius: 96% 82% 18% 12% / 39% 30% 10% 46%;
+        border-radius: 96% 82% 18% 44% / 39% 30% 20% 46%;
     }
 }
 @keyframes skills{
@@ -44,5 +44,14 @@
     }
     to{
         transform: rotate(285deg);
+    }
+}
+@keyframes gradualOpacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        
     }
 }
