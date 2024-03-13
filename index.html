@@ -22,7 +22,7 @@
                             <a class="nav-link redirection" href="#about">Qui suis-je ?</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link redirection" href="#mesProjets">Mes projets</a>
+                            <a class="nav-link redirection" href="#myProjects">Mes projets</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link redirection" href="#contactMe">Contact</a>
@@ -37,9 +37,9 @@
     </header>
     <main>
         <section id="presentation">
-            <div class="container container_presentation d-flex align-items-center ">
+            <div class="container presentation__container d-flex align-items-center ">
                 <div class="row align-items-center presentation">
-                    <div class="col-md-2 d-flex justify-content-end container_square">
+                    <div class="col-md-2 d-flex justify-content-end">
                         <div class="square"></div>
                     </div>
                     <div class="col-8 col-md-6 text-center text-light text-presentation"> 
@@ -47,7 +47,7 @@
                         <h2 class="fw-light py-3">Développeur Web</h2>
                         <p class="fs-6">Passionné par la création de sites web je saurais vous écouter<br/>et vous accompagner dans la réalisation de tous vos projets</p>
                         <div class="text-center">
-                            <button onclick="window.location.href='#mesProjets'" type="button" class="btn mt-4">Mes projets</button>
+                            <button onclick="window.location.href='#myProjects'" type="button" class="btn mt-4">Mes projets</button>
                         </div>
                     </div>
                     <div class="col-4 col-md-4 my-5 d-flex justify-content-center">
@@ -58,63 +58,70 @@
                 </div>
             </div>
         </section>
-        <section id="about" class="container_about d-flex align-items-center">
+        <section id="about" class="about__container d-flex align-items-center">
             <div class="container">
-                <div>
-                    <h2 class="fs-sm-6">Qui suis-je ?</h2> 
-                </div>
-                <div class="row g-1 meAndSkills">
-                    <div class="col-8 justify-content-center">
-                        <p class="fst-normal fs-2 fs-md-6">Développement web </p>
+                <h1 class="text-center my-4">Qui suis-je ?</h1> 
+                <div class="row g-1 meAndSkills mt-5">
+                    <div class="col-7 justify-content-center">
+                        <h2 class="fst-normal fs-2 fs-md-6"><u>Développement web</u></h2>
                         <div class="aboutMe mx-auto"> 
                             <p>Très intéressé par la découverte de nouvelles technologies et l'acquisition de nouvelles compétences, j'ai suivi une formation de Dévelopeur Web chez <span><img src='./img/oc_purple.png' alt='logo openClassrooms' class='w-50 p-1'></span></p>
                             <p>Ainsi je suis maintenant <b>Développeur Front-End</b> et je souhaite évoluer dans cette nouvelle voie après 20 ans dans le milieu de la santé.</p>
                         </div>
                     </div>
                     <div class="col g-1">
-                        <p class="fs-2">Compétences</p>
+                        <h2 class="fs-2 text"><u>Compétences</u></h2>
                         <div class="skills d-flex flex-wrap">
-                            <p>HTML</p>
-                            <p>CSS</p>
-                            <p>Sass</p>
-                            <p>JavaScript</p>
-                            <p>React</p>
-                            <p>Git</p>
-                            <p>GitHub</p>
+                            <p><i class="fa-brands fa-html5" ></i>: HTML</p>
+                            <p><i class="fa-brands fa-css3-alt"></i>: CSS</p>
+                            <p><i class="fa-brands fa-js"></i>: JavaScript</p>
+                             <p><i class="fa-brands fa-sass"></i>: Sass</p>
+                            <p><i class="fa-brands fa-react"></i>: React</p>
+                            <p><i class="fa-brands fa-git"></i>: Git</p>
+                            <p><i class="fa-brands fa-github"></i>: GitHub</p>
+                            <p><i class="fa-brands fa-bootstrap"></i>: Bootstrap</p>
+                            <p><i class="fa-brands fa-node-js"></i>: NodeJS</p>
+                            <p><i class="fa-brands fa-npm"></i>: npm</p>
+                            <p><i class="fa-brands fa-yarn"></i>: Yarn</p>
+                            <p><i class="fa-solid fa-font-awesome"></i>: Fontawesome</p>
                             <p>Responsive design</p>
                             <p>SEO</p>
-                            <p>SQL Basics</p>
-                            <p>Bootstrap</p>
+                            <p>MongoDB</p>
+                        </div>
+                        <h2 class="fs-2"><u>Notions</u></h2>
+                        <div class="skills d-flex flex-wrap">
+                            <p><i class="fa-brands fa-php"></i>: PHP</p>
+                            <p><i class="fa-solid fa-database"></i>: SQL Basics</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="mesProjets">
-            <h1 class="my-5 ms-15">Mes projets:</h1>
-            <div class="container_mesProjets m-0 p-0">
+        <section id="myProjects">
+            <h1 class="my-4">Mes projets:</h1>
+            <div class="myProjects__container m-0 p-0">
                 <div class="d-flex justify-content-center p-0">   
-                    <div class="projet">
+                    <div class="project">
                         <div class="rectangle">
-                            <a href="#ohMyFood" title='Visualiser le projet "OHMYFOOD"' class = "lienProjet">
+                            <a href="#ohMyFood" title='Visualiser le projet "OHMYFOOD"' class = "project__link">
                                 <img src="img/P3/P3_presentation.png" alt="Présentation projet P3" class="image">
                             </a>
                         </div>
                         <h5 class="text-center">OHMYFOOD</h5>
                         <p class="px-3 text-center">Dynamisation d'une page web avec des animations CSS</p>
                     </div>
-                    <div class="projet">
+                    <div class="project">
                         <div class="rectangle">
-                            <a href="#laPanthere" title='Visualiser le projet "LA PANTHERE"'  class = "lienProjet">
+                            <a href="#laPanthere" title='Visualiser le projet "LA PANTHERE"'  class = "project__link">
                                 <img src="img/P4/P4_presentation.png" alt="Présentation projet P4" class="image">
                             </a>
                         </div>
                         <h5 class="text-center">LA PANTHERE</h5>
                         <p class="px-3 text-center">Optimisation d'un site web existant</p>
                     </div>
-                    <div class="projet">
+                    <div class="project">
                         <div class="rectangle">
-                            <a href="#kanap" title='Visualiser le projet "KANAP"'  class = "lienProjet">
+                            <a href="#kanap" title='Visualiser le projet "KANAP"'  class = "project__link">
                                 <img src="img/P5/P5_presentation.png" alt="Présentation projet P5" class="image">
                             </a>
                         </div>
@@ -123,18 +130,18 @@
                     </div> 
                 </div>
                 <div class="d-flex justify-content-center">
-                    <div class="projet">
+                    <div class="project">
                         <div class="rectangle">
-                            <a href="#piiquante" title='Visualiser le projet "PIIQUANTE"'  class = "lienProjet">
+                            <a href="#piiquante" title='Visualiser le projet "PIIQUANTE"'  class = "project__link">
                                 <img src="img/P6/P6_presentation.png" alt="Présentation projet P6" class="image">
                             </a>
                         </div>
                         <h5 class="text-center">PIIQUANTE</h5>
                         <p class="px-3 text-center">Création d'une API sécurisée pour une application d'avis gastronomiques</p>
                     </div>
-                    <div class="projet">
+                    <div class="project">
                         <div class="rectangle">
-                            <a href="#kasa" title='Visualiser le projet "KASA"'  class = "lienProjet">
+                            <a href="#kasa" title='Visualiser le projet "KASA"'  class = "project__link">
                                 <img src="img/P7/P7_Presentation.png" alt="Présentation projet P7" class="image">
                             </a>
                         </div>
@@ -143,9 +150,13 @@
                     </div>
                 </div>
             </div>
-            <section id="ohMyFood" class = "projets">
-                <a href="#mesProjets" class="close fs-1 text-decoration-none d-flex justify-content-end">x</a>
-                <h1>OHMYFOOD</h1>
+            <section id="ohMyFood" class = "projects">
+                <div class="position-relative">
+                    <h1>OHMYFOOD</h1>
+                    <a href="#myProjects" class="close fs-1 text-decoration-none position-absolute top-0">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    </a>
+                </div>
                 <div class="images">   
                     <img src="img/P3/P3_presentation.png" alt="Photo Présentation version Desktop">
                     <img src="img/P3/P3_menu_desktop.png" alt="Photo Menu Version desktop">
@@ -153,13 +164,29 @@
                     <div>
                         <p class="projectDescription">Le but de ce projet était de développer un site "mobile first" qui répertorie les menus de restaurants gastronomiques.<br/>
                         Création des pages depuis une maquette Figma, et implémentation d'animations CSS.</p>
+                        <div>
+                            <h4 class="d-flex align-items-center justify-content-center"><u>Langages :</u>
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                            </h4>
+                            <h4 class="d-flex align-items-center justify-content-center"><u>Outils utilisés :</u>
+                                <i class="fa-solid fa-font-awesome"></i>
+                                <i class="fa-brands fa-sass"></i>
+                                <i class="fa-brands fa-git"></i>
+                                <i class="fa-brands fa-github"></i>
+                            </h4>
+                        </div>
                         <a href="https://chrbour.github.io/ohmyfood/" target="_blank">https://chrbour.github.io/ohmyfood/</a>
                     </div>
                 </div>
             </section>
-            <section id="laPanthere" class = "projets">
-                <a href="#mesProjets" class="close fs-1 text-decoration-none d-flex justify-content-end">x</a>
-                <h1>LA PANTHERE</h1>
+            <section id="laPanthere" class = "projects">
+                <div class="position-relative">
+                    <h1>LA PANTHERE</h1>
+                    <a href="#myProjects" class="close fs-1 text-decoration-none position-absolute top-0">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    </a>
+                </div>
                 <div class="images">   
                     <img src="img/P4/P4_presentation.png" alt="Photo Présentation version Desktop">
                     <img src="img/P4/P4_Contact.png" alt="Photo Page Contact Version desktop">
@@ -167,57 +194,130 @@
                     <div>
                         <p class="projectDescription">Ce projet consistait à améliorer le SEO d'un site existant de web design.<br/>
                         Analyse de l'état de SEO du site, optimisation de la performance et de l'accessibilité.</p>
+                        <div>
+                            <h4 class="d-flex align-items-center justify-content-center"><u>Langages :</u>
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                            </h4>
+                            <h4 class="d-flex align-items-center justify-content-center"><u>Outils utilisés :</u>
+                                <i style="font-size: 14px">Lighthouse</i>
+                                <i style="font-size: 14px">GTmetrix</i>
+                                <i style="font-size: 14px">Validation W3C</i>
+                                <i class="fa-brands fa-git"></i>
+                                <i class="fa-brands fa-github"></i>
+                            </h4>
+                        </div>
                         <a href="https://chrbour.github.io/LaPanthere/" target="_blank">https://chrbour.github.io/LaPanthere/</a>
                     </div>
                 </div>
             </section>
-            <section id="kanap" class = "projets">
-                <a href="#mesProjets" class="close fs-1 text-decoration-none d-flex justify-content-end">x</a>
-                <h1>KANAP</h1>
+            <section id="kanap" class = "projects">
+                <div class="position-relative">
+                    <h1>KANAP</h1>
+                    <a href="#myProjects" class="close fs-1 text-decoration-none position-absolute top-0">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    </a>
+                </div>
                 <div class="images">   
                     <img src="img/P5/P5_presentation.png" alt="Photo Présentation version Desktop">
                     <img src="img/P5/P5_Produits.png" alt="Photo de la page produits Version desktop">
                     <img src="img/P5/P5_Panier.png" alt="Photo du panier version desktop">
-                    <p class="projectDescription">Dans ce projet les parties front et back-end d'un site e-commerce étaient créées.<br/>
-                    Il fallait ajouter la partie JavaScript pour utiliser une API et mobiliser le localStorage afin de dynamiser le site.</p>
+                    <div>
+                        <p class="projectDescription">Dans ce projet les parties front et back-end d'un site e-commerce étaient créées.<br/>
+                        Il fallait ajouter la partie JavaScript pour utiliser une API et mobiliser le localStorage afin de dynamiser le site.</p>
+                        <div>
+                            <h4 class="d-flex align-items-center justify-content-center"><u>Langages :</u>
+                                <i class="fa-brands fa-js"></i>
+                            </h4>
+                            <h4 class="d-flex align-items-center justify-content-center"><u>Outils utilisés :</u>
+                                <i style="font-size: 14px">localStorage</i>
+                                <i style="font-size: 14px">API</i>
+                                <i class="fa-brands fa-git"></i>
+                                <i class="fa-brands fa-github"></i>
+                            </h4>
+                        </div>
+                    </div>
                     <img src="img/P5/P5_Validation_Commande.png" alt="Photo validation de commande.">
                 </div>
             </section>
-            <section id="piiquante" class = "projets">
-                <a href="#mesProjets" class="close fs-1 text-decoration-none d-flex justify-content-end">x</a>
-                <h1>PIIQUANTE</h1>
+            <section id="piiquante" class = "projects">
+                <div class="position-relative">
+                    <h1>PIIQUANTE</h1>
+                    <a href="#myProjects" class="close fs-1 text-decoration-none position-absolute top-0">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    </a>
+                </div>
                 <div class="images">   
                     <img src="img/P6/P6_presentation.png" alt="Photo Présentation version Desktop">
                     <img src="img/P6/P6_Sauce.png" alt="Photo détail sauce version desktop">
                     <img src="img/P6/P6_Ajout_Sauce.png" alt="Photo page Ajout d'une sauce">
-                    <p class="projectDescription">Ce projet reposait sur la création d'une API sécurisée pour une application d'avis gastronomiques.</p>
+                    <div>
+                        <p class="projectDescription">Ce projet reposait sur la création d'une API sécurisée pour une application d'avis gastronomiques.</p>
+                        <div>
+                            <h4 class="d-flex align-items-center justify-content-center"><u>Langages :</u>
+                                <i class="fa-brands fa-js"></i>
+                            </h4>
+                            <h4 class="d-flex align-items-center justify-content-center"><u>Outils utilisés :</u>
+                                <i class="fa-brands fa-node-js"></i>
+                                <i class="fa-brands fa-npm"></i>
+                                <i style="font-size: 14px">mongoDB</i>
+                                <i class="fa-brands fa-git"></i>
+                                <i class="fa-brands fa-github"></i>
+                            </h4>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section id="kasa" class = "projets">
-                <a href="#mesProjets" class="close fs-1 text-decoration-none d-flex justify-content-end">x</a>
-                <h1>KASA</h1>
+            <section id="kasa" class = "projects">
+                <div class="position-relative">
+                    <h1>KASA</h1>
+                    <a href="#myProjects" class="close fs-1 text-decoration-none position-absolute top-0">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    </a>
+                </div>
                 <div class="images">   
                     <img src="img/P7/P7_Presentation.png" alt="Photo de présentation">
                     <img src="img/P7/P7_Rental.png" alt="Photo Page de location d'appartement version desktop">
                     <img src="img/P7/P7_A_Propos.png" alt="Photo Page à propos version desktop">
-                    <p class="projectDescription">Le but de ce projet était de créer une application web de location immobilière avec React.</p>
+                    <div>
+                        <p class="projectDescription">Le but de ce projet était de créer une application web de location immobilière avec React.</p>
+                        <div>
+                            <h4 class="d-flex align-items-center justify-content-center"><u>Langages :</u>
+                                <i style="font-size: 14px">JSX</i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                            </h4>
+                            <h4 class="d-flex align-items-center justify-content-center"><u>Outils utilisés :</u>
+                                <i class="fa-brands fa-react"></i>
+                                <i class="fa-brands fa-node-js"></i>
+                                <i class="fa-brands fa-yarn"></i>
+                                <i class="fa-brands fa-sass"></i>
+                                <i class="fa-brands fa-git"></i>
+                                <i class="fa-brands fa-github"></i>
+                            </h4>
+                        </div>
+                        <a href="https://chrbour.github.io/Kasa/" target="_blank">https://chrbour.github.io/Kasa/</a>
+                    </div>
                 </div>
             </section>
         </section>
         <section id="contact" class="d-flex align-items-center flex-column">
-            <br><br><br>
-            <h1 id="contactMe">Contactez-moi:</h1>
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/christophe-bourreau" target="blank">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-                <a href="https://github.com/chrbour" target="blank">
-                    <i class="bi bi-github"></i>
-                </a>
-            </div>
-            <div class="d-flex align-items-center">
-                <i class="bi bi-envelope"></i>
-                <h4><a href="mailto: christophebourreau@yahoo.fr">christophebourreau@yahoo.fr</a></h3>
+            <h1 id="contactMe" class="mb-5">Contactez-moi:</h1>
+            <div id="contactMeLinks" class = "text-center p-5">
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/christophe-bourreau" target="blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/chrbour" target="blank">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center">
+                    <h4>
+                        <a class="mail" href="mailto: christophebourreau@yahoo.fr"><i class="bi bi-envelope"></i>
+                            <span>christophebourreau@yahoo.fr</span>
+                        </a>
+                    </h4>
+                </div>
             </div>
         </section>
     </main>
