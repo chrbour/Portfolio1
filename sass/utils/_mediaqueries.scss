@@ -9,12 +9,6 @@
 #contactMeLinks{
     width: 50%;
 }
-@media screen and (max-width: 1024px){
-    .projects + div{
-        font-size: 150px;
-        color: red;
-    }
-}
 @media screen and (max-width:899px){
     .mail span{
         display: none;
@@ -61,11 +55,20 @@
         margin: 15px;
     }
     #ohMyFood, #laPanthere, #kanap, #piiquante, #kasa{
+        &:target{
+            width:100vw;
+        }
         & img{
             width: 40%;
             height: 40%;
             margin: 10px;
             border-radius: 10px;
         }
+        & h1{
+            width: 200px;
+        }
+    }
+    .images h4{
+        flex-direction: column;
     }
 }

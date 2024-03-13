@@ -112,13 +112,6 @@ img{
         border-radius: 10px;
         border: solid 5px $color-white;
     }
-    & h1{
-        color: $color-white;
-        background: $cyan-900;
-        width:300px;
-        margin: 0 auto 10px;
-        border-radius: 20px;
-    }
     & i{
         color: $color-white; 
         font-size: 30px;
@@ -130,17 +123,23 @@ img{
         font-size: 22px;
     }
 }
+.projects__container-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-white;
+        background: $cyan-900;
+        padding: 0 15px;width: 50%;
+        margin: 0 auto 10px;
+        border-radius: 20px;
+}
 .close {
-    
-    right: 170px !important;
+    right: 7% !important;
     & i{
         margin: 0 !important;
-        font-size: 60px !important;
-        color:$color-black !important;
+        font-size: 45px !important;
+        color:$color-white !important;
 }
-}
-.fa-circle-xmark{
-    font-size: 60px;
 }
 .images{
     display: flex;
@@ -149,10 +148,13 @@ img{
     margin-top: 30px;
     box-sizing: border-box;
 }
+.images__container-details{
+    width: 30%;
+}
 .projectDescription{
     color: $color-white;
     background-color: $cyan-900;
-    width: 85%;
+    width: 75%;
     padding: 15px;
     margin: 10px;
     border-radius: 20px 40px;

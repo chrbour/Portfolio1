@@ -12084,13 +12084,6 @@ img {
   border-radius: 10px;
   border: solid 5px white;
 }
-#ohMyFood h1, #ohMyFood .h1, #laPanthere h1, #laPanthere .h1, #kanap h1, #kanap .h1, #piiquante h1, #piiquante .h1, #kasa h1, #kasa .h1 {
-  color: white;
-  background: #032830;
-  width: 300px;
-  margin: 0 auto 10px;
-  border-radius: 20px;
-}
 #ohMyFood i, #laPanthere i, #kanap i, #piiquante i, #kasa i {
   color: white;
   font-size: 30px;
@@ -12102,17 +12095,25 @@ img {
   font-size: 22px;
 }
 
+.projects__container-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #032830;
+  padding: 0 15px;
+  width: 50%;
+  margin: 0 auto 10px;
+  border-radius: 20px;
+}
+
 .close {
-  right: 170px !important;
+  right: 7% !important;
 }
 .close i {
   margin: 0 !important;
-  font-size: 60px !important;
-  color: black !important;
-}
-
-.fa-circle-xmark {
-  font-size: 60px;
+  font-size: 45px !important;
+  color: white !important;
 }
 
 .images {
@@ -12123,10 +12124,14 @@ img {
   box-sizing: border-box;
 }
 
+.images__container-details {
+  width: 30%;
+}
+
 .projectDescription {
   color: white;
   background-color: #032830;
-  width: 85%;
+  width: 75%;
   padding: 15px;
   margin: 10px;
   border-radius: 20px 40px;
@@ -12176,12 +12181,6 @@ img {
   width: 50%;
 }
 
-@media screen and (max-width: 1024px) {
-  .projects + div {
-    font-size: 150px;
-    color: red;
-  }
-}
 @media screen and (max-width: 899px) {
   .mail span {
     display: none;
@@ -12227,11 +12226,20 @@ img {
     font-size: 60px;
     margin: 15px;
   }
+  #ohMyFood:target, #laPanthere:target, #kanap:target, #piiquante:target, #kasa:target {
+    width: 100vw;
+  }
   #ohMyFood img, #laPanthere img, #kanap img, #piiquante img, #kasa img {
     width: 40%;
     height: 40%;
     margin: 10px;
     border-radius: 10px;
+  }
+  #ohMyFood h1, #ohMyFood .h1, #laPanthere h1, #laPanthere .h1, #kanap h1, #kanap .h1, #piiquante h1, #piiquante .h1, #kasa h1, #kasa .h1 {
+    width: 200px;
+  }
+  .images h4, .images .h4 {
+    flex-direction: column;
   }
 }
 
