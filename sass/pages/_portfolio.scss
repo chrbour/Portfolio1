@@ -93,7 +93,7 @@ img{
     width: 25%;
     height: 25%;
 }
-#ohMyFood, #laPanthere, #kanap, #piiquante, #kasa{
+#ohMyFood, #laPanthere, #kanap, #piiquante, #kasa, #volcans{
     visibility: hidden;
     position: absolute;
     &:target{
@@ -149,7 +149,7 @@ img{
     box-sizing: border-box;
 }
 .images__container-details{
-    width: 30%;
+    width: 50%;
 }
 .projectDescription{
     color: $color-white;

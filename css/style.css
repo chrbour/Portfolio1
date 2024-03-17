@@ -12064,11 +12064,11 @@ img {
   height: 25%;
 }
 
-#ohMyFood, #laPanthere, #kanap, #piiquante, #kasa {
+#ohMyFood, #laPanthere, #kanap, #piiquante, #kasa, #volcans {
   visibility: hidden;
   position: absolute;
 }
-#ohMyFood:target, #laPanthere:target, #kanap:target, #piiquante:target, #kasa:target {
+#ohMyFood:target, #laPanthere:target, #kanap:target, #piiquante:target, #kasa:target, #volcans:target {
   text-align: center;
   visibility: visible;
   justify-content: center;
@@ -12078,18 +12078,18 @@ img {
   background: linear-gradient(150deg, #cff4fc, #055160);
   animation: 4s ease-in-out infinite alternate movingProjects;
 }
-#ohMyFood img, #laPanthere img, #kanap img, #piiquante img, #kasa img {
+#ohMyFood img, #laPanthere img, #kanap img, #piiquante img, #kasa img, #volcans img {
   width: 35%;
   margin: 10px;
   border-radius: 10px;
   border: solid 5px white;
 }
-#ohMyFood i, #laPanthere i, #kanap i, #piiquante i, #kasa i {
+#ohMyFood i, #laPanthere i, #kanap i, #piiquante i, #kasa i, #volcans i {
   color: white;
   font-size: 30px;
   margin: 5px 10px;
 }
-#ohMyFood div a, #laPanthere div a, #kanap div a, #piiquante div a, #kasa div a {
+#ohMyFood div a, #laPanthere div a, #kanap div a, #piiquante div a, #kasa div a, #volcans div a {
   text-decoration: none;
   color: white;
   font-size: 22px;
@@ -12125,7 +12125,7 @@ img {
 }
 
 .images__container-details {
-  width: 30%;
+  width: 50%;
 }
 
 .projectDescription {
@@ -12226,16 +12226,16 @@ img {
     font-size: 60px;
     margin: 15px;
   }
-  #ohMyFood:target, #laPanthere:target, #kanap:target, #piiquante:target, #kasa:target {
+  #ohMyFood:target, #laPanthere:target, #kanap:target, #piiquante:target, #kasa:target, #volcans:target {
     width: 100vw;
   }
-  #ohMyFood img, #laPanthere img, #kanap img, #piiquante img, #kasa img {
+  #ohMyFood img, #laPanthere img, #kanap img, #piiquante img, #kasa img, #volcans img {
     width: 40%;
     height: 40%;
     margin: 10px;
     border-radius: 10px;
   }
-  #ohMyFood h1, #ohMyFood .h1, #laPanthere h1, #laPanthere .h1, #kanap h1, #kanap .h1, #piiquante h1, #piiquante .h1, #kasa h1, #kasa .h1 {
+  #ohMyFood h1, #ohMyFood .h1, #laPanthere h1, #laPanthere .h1, #kanap h1, #kanap .h1, #piiquante h1, #piiquante .h1, #kasa h1, #kasa .h1, #volcans h1, #volcans .h1 {
     width: 200px;
   }
   .images h4, .images .h4 {
